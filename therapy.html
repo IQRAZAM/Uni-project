@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    display: flex;
+    margin: 50px 0;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.content .text {
+    margin-left: 50px;
+}
+
+.content .text h1 {
+    font-size: 48px;
+}
+
+.content .text p {
+    font-size: 24px;
+}
+
+.content .text button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content .text button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.jpg"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <img src="image.jpg" alt="">
+        <div class="text">
+            <h1>Heading</h1>
+            <p>Paragraph</p>
+            <button onclick="nextPage()">Next Page</button>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+    <script>
+        // script.js
+function nextPage() {
+    let userName = prompt("Plz give your Name:");
+    if (userName) {
+        let randomNumber = Math.floor(Math.random() * paragraphs.length);
+        let randomParagraph = paragraphs[randomNumber];
+        let newPageContent = `
+            <h1>Hello, ${userName}!</h1>
+            <p>${randomParagraph.text}</p>
+            <button onclick="window.history.back()">Go Back</button>
+        `;
+        document.body.innerHTML = newPageContent;
+    }
+}
+
+let paragraphs = [
+    {text: "In moments of challenge, remember the strength that resides within you. Life's journey may bring unexpected storms, but you have weathered them before and emerged even stronger. Trust in your resilience, for you are capable of overcoming anything that comes your way."},
+    {text: "You are a masterpiece in progress, a canvas painted with the hues of experience and growth. Embrace your imperfections, for they are the brushstrokes that make you uniquely beautiful. In every perceived flaw lies a story of resilience and authenticity."},
+    {text: "Life can be a labyrinth, and in the midst of uncertainty, remember that you are a beacon of light. Your presence illuminates the path, guiding you and others toward moments of joy, love, and connection. Your journey is significant, and you are making a positive impact."},
+    { text: "You are not alone on this journey. Reach out, share your thoughts, and allow the warmth of human connection to comfort your soul. Every connection is a reminder that we are intertwined in the tapestry of life, supporting and uplifting one another." },
+    { text: "Tomorrow is a blank page waiting for your story. No matter the challenges of today, a new dawn brings fresh opportunities and the promise of positive change. Approach each day with hope, for there is immense power in the possibility of tomorrow."}
+];
+    </script>
+</body>
+</html>
