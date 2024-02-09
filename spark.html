@@ -77,13 +77,14 @@ nav ul li a:hover {
     background-color: rgba(236, 183, 109, 0.611);
     color:black;
     border: none;
+    border-radius: 7px;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
 }
 
 .content .text button:hover {
-    background-color: rgb(237, 141, 240);
+    background-color: rgb(18, 151, 111);
 }
 #dynamic-content {
     padding: 20px;
@@ -148,6 +149,7 @@ nav ul li a:hover {
         // script.js
         function nextPage() {
     let userName = prompt("Enter your name:");
+    let c = prompt("what's your age?")
     if (userName) {
         let randomNumber = Math.floor(Math.random() * paragraphs.length);
         let randomParagraph = paragraphs[randomNumber];
@@ -182,10 +184,34 @@ nav ul li a:hover {
 
 let paragraphs = [
     {text: "In moments of challenge, remember the strength that resides within you. Life's journey may bring unexpected storms, but you have weathered them before and emerged even stronger. Trust in your resilience, for you are capable of overcoming anything that comes your way."},
-    {text: "You are a masterpiece in progress, a canvas painted with the hues of experience and growth. Embrace your imperfections, for they are the brushstrokes that make you uniquely beautiful. In every perceived flaw lies a story of resilience and authenticity."},
+    {text: "Life's journey is a rollercoaster of highs and lows. Embrace every twist and turn, for they shape your unique story. Your resilience is your greatest asset, propelling you forward even in the face of adversity. You are capable, you are worthy, and you are never alone"},
     {text: "Life can be a labyrinth, and in the midst of uncertainty, remember that you are a beacon of light. Your presence illuminates the path, guiding you and others toward moments of joy, love, and connection. Your journey is significant, and you are making a positive impact."},
     { text: "You are not alone on this journey. Reach out, share your thoughts, and allow the warmth of human connection to comfort your soul. Every connection is a reminder that we are intertwined in the tapestry of life, supporting and uplifting one another." },
-    { text: "Tomorrow is a blank page waiting for your story. No matter the challenges of today, a new dawn brings fresh opportunities and the promise of positive change. Approach each day with hope, for there is immense power in the possibility of tomorrow."}
+    { text: "Tomorrow is a blank page waiting for your story. No matter the challenges of today, a new dawn brings fresh opportunities and the promise of positive change. Approach each day with hope, for there is immense power in the possibility of tomorrow."},
+    {text: "Today, take a moment to acknowledge the strength within you. Despite the storms you've weathered, you stand tall. Your scars tell a story of survival and triumph. Keep moving forward, for brighter days lie ahead. I believe in you."},
+    {text: "Your life is a canvas, painted with experiences that shape your essence. Embrace the messy, imperfect beauty of it all. Every challenge you've overcome has made you stronger. Your journey is uniquely yours, and it's worth celebrating. Keep shining."},
+    {text: "In the hustle and bustle of life, don't forget to prioritize your well-being. Take a deep breath and center yourself. You are worthy of love, happiness, and inner peace. Remember, it's okay to take a step back and care for yourself. You deserve it."},
+    {text: "When life feels overwhelming, don't hesitate to reach out for support. Asking for help is a sign of strength, not weakness. You are surrounded by a community that cares for you. Together, we can navigate through the toughest of times. You are never alone."},
+    {text: "In the grand tapestry of life, you are a vibrant thread woven with purpose and intention. Embrace your uniqueness and shine brightly. You are an essential part of this beautiful mosaic we call existence."},
+    {text: "Like a butterfly emerging from its cocoon, you have the power to transform. Embrace change, for it is the catalyst for growth. Your journey may be challenging, but the beauty lies in the journey itself"},
+    {text: "Every sunrise brings a new beginning, a chance to start fresh. Leave yesterday's worries behind and embrace the possibilities of today. You hold the power to shape your destiny"},
+    {text: "Happiness is not found in the pursuit of perfection, but in the acceptance of imperfection. Embrace your flaws, for they are what make you beautifully human .Remember, the stars cannot shine without darkness. In the darkest moments, find solace in the promise of a brighter tomorrow."},
+    {text: "In moments of self-doubt and insecurity, remember that you are enough just as you are. You possess unique gifts, talents, and strengths that the world needs. Embrace your authenticity and shine your light brightly for all to see"},
+    {text: "As you journey through life, allow yourself the grace to embrace imperfection and uncertainty. It's okay to not have all the answers or to feel unsure of the path ahead. Trust in the wisdom of your intuition, and know that you are capable of finding your way forward, one step at a time. "},
+    {text: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well."},
+    {text: "The person who is always there for others, know that your heart is rare.That you are worthy of love that you keep giving to everyone.Remind yourself that you don't always have to be strong , that you don't always have to be a fixer."},
+    {text: "Remind yourself that you do not need to carry the weight of the world on your shoulders,that you may not be able to save everyone,that you may not be able to heal every hurt but you are enough for yourself , you sunshine is only for yourself."},
+    {text: "Sometimes, no matter how much love is there,you have to lay it down.You have to walk away.You have to accept that sometimes you get too big for it,or you want different things or you cannot pour yourself out for it any longer . AND THAT'S OKAYYY!!"},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""},
+    {text: ""}
 ];
     </script>
 </body>
